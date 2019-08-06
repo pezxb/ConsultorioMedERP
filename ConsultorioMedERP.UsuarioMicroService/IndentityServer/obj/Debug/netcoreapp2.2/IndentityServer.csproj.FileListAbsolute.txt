@@ -1,0 +1,16 @@
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\bin\Debug\netcoreapp2.2\Settings\apiresources.json
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\bin\Debug\netcoreapp2.2\Settings\clients.json
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\bin\Debug\netcoreapp2.2\Settings\users.json
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\bin\Debug\netcoreapp2.2\IndentityServer.deps.json
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\bin\Debug\netcoreapp2.2\IndentityServer.runtimeconfig.json
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\bin\Debug\netcoreapp2.2\IndentityServer.runtimeconfig.dev.json
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\bin\Debug\netcoreapp2.2\IndentityServer.dll
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\bin\Debug\netcoreapp2.2\IndentityServer.pdb
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\obj\Debug\netcoreapp2.2\IndentityServer.csproj.CoreCompileInputs.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\obj\Debug\netcoreapp2.2\IndentityServer.RazorAssemblyInfo.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\obj\Debug\netcoreapp2.2\IndentityServer.RazorAssemblyInfo.cs
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\obj\Debug\netcoreapp2.2\IndentityServer.AssemblyInfoInputs.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\obj\Debug\netcoreapp2.2\IndentityServer.AssemblyInfo.cs
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\obj\Debug\netcoreapp2.2\IndentityServer.RazorTargetAssemblyInfo.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\obj\Debug\netcoreapp2.2\IndentityServer.dll
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\IndentityServer\obj\Debug\netcoreapp2.2\IndentityServer.pdb

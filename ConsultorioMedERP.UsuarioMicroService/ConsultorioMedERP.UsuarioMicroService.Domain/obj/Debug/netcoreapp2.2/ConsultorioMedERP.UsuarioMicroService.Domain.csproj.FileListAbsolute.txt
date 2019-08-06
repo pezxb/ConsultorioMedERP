@@ -1,0 +1,4 @@
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\ConsultorioMedERP.UsuarioMicroService.Domain\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuarioMicroService.Domain.csprojAssemblyReference.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\ConsultorioMedERP.UsuarioMicroService.Domain\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuarioMicroService.Domain.csproj.CoreCompileInputs.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\ConsultorioMedERP.UsuarioMicroService.Domain\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuarioMicroService.Domain.AssemblyInfoInputs.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuarioMicroService\ConsultorioMedERP.UsuarioMicroService.Domain\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuarioMicroService.Domain.AssemblyInfo.cs

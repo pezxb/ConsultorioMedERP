@@ -1,0 +1,9 @@
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\bin\Debug\netstandard2.0\ConsultorioMedERP.Common.deps.json
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\bin\Debug\netstandard2.0\ConsultorioMedERP.Common.dll
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\bin\Debug\netstandard2.0\ConsultorioMedERP.Common.pdb
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\obj\Debug\netstandard2.0\ConsultorioMedERP.Common.csprojAssemblyReference.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\obj\Debug\netstandard2.0\ConsultorioMedERP.Common.csproj.CoreCompileInputs.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\obj\Debug\netstandard2.0\ConsultorioMedERP.Common.AssemblyInfoInputs.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\obj\Debug\netstandard2.0\ConsultorioMedERP.Common.AssemblyInfo.cs
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\obj\Debug\netstandard2.0\ConsultorioMedERP.Common.dll
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\obj\Debug\netstandard2.0\ConsultorioMedERP.Common.pdb
