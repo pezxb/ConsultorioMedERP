@@ -12015,11 +12015,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Api\\ConsultorioMedERP.UsuarioMicroService.Api.csproj",
+      "projectUniqueName": "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Api\\ConsultorioMedERP.UsuarioMicroService.Api.csproj",
       "projectName": "ConsultorioMedERP.UsuarioMicroService.Api",
-      "projectPath": "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Api\\ConsultorioMedERP.UsuarioMicroService.Api.csproj",
+      "projectPath": "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Api\\ConsultorioMedERP.UsuarioMicroService.Api.csproj",
       "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-      "outputPath": "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Api\\obj\\",
+      "outputPath": "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12038,11 +12038,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Domain\\ConsultorioMedERP.UsuarioMicroService.Domain.csproj": {
-              "projectPath": "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Domain\\ConsultorioMedERP.UsuarioMicroService.Domain.csproj"
+            "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Domain\\ConsultorioMedERP.UsuarioMicroService.Domain.csproj": {
+              "projectPath": "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Domain\\ConsultorioMedERP.UsuarioMicroService.Domain.csproj"
             },
-            "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj": {
-              "projectPath": "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj"
+            "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj": {
+              "projectPath": "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj"
             }
           }
         }

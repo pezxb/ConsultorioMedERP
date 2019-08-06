@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj": {}
+    "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj": {}
   },
   "projects": {
-    "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj": {
+    "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj",
+        "projectUniqueName": "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj",
         "projectName": "ConsultorioMedERP.UsuarioMicroService.Entity",
-        "projectPath": "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj",
+        "projectPath": "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\ConsultorioMedERP.UsuarioMicroService.Entity.csproj",
         "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\obj\\",
+        "outputPath": "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\ConsultorioMedERP.UsuarioMicroService.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

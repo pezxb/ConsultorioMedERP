@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\IndentityServer\\IndentityServer.csproj": {}
+    "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\IndentityServer\\IndentityServer.csproj": {}
   },
   "projects": {
-    "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\IndentityServer\\IndentityServer.csproj": {
+    "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\IndentityServer\\IndentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\IndentityServer\\IndentityServer.csproj",
+        "projectUniqueName": "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\IndentityServer\\IndentityServer.csproj",
         "projectName": "IndentityServer",
-        "projectPath": "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\IndentityServer\\IndentityServer.csproj",
+        "projectPath": "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\IndentityServer\\IndentityServer.csproj",
         "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "e:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\IndentityServer\\obj\\",
+        "outputPath": "E:\\Source\\Repos\\ConsultorioMedERP\\ConsultorioMedERP.UsuarioMicroService\\IndentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
