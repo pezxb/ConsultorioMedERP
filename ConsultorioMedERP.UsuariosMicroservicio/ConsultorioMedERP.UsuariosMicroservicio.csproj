@@ -16,4 +16,8 @@
     <ProjectReference Include="..\ConsultorioMedERP.Common\ConsultorioMedERP.Common.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\Servicio\" />
+  </ItemGroup>
+
 </Project>
