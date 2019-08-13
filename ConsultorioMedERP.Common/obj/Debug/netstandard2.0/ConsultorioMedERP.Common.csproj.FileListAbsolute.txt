@@ -7,3 +7,6 @@ E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\obj\Debug\netstandard
 E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\obj\Debug\netstandard2.0\ConsultorioMedERP.Common.AssemblyInfo.cs
 E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\obj\Debug\netstandard2.0\ConsultorioMedERP.Common.dll
 E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\obj\Debug\netstandard2.0\ConsultorioMedERP.Common.pdb
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.Common\obj\Debug\netstandard2.0\ConsultorioMedERP.Common.csproj.CopyComplete

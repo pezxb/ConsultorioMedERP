@@ -1,0 +1,17 @@
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\bin\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.deps.json
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\bin\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.runtimeconfig.json
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\bin\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.runtimeconfig.dev.json
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\bin\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.dll
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\bin\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.pdb
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\bin\Debug\netcoreapp2.2\ConsultorioMedERP.Common.dll
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\bin\Debug\netcoreapp2.2\ConsultorioMedERP.Common.pdb
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.csprojAssemblyReference.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.csproj.CoreCompileInputs.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.RazorAssemblyInfo.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.RazorAssemblyInfo.cs
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.AssemblyInfoInputs.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.AssemblyInfo.cs
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.RazorTargetAssemblyInfo.cache
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.csproj.CopyComplete
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.dll
+E:\Source\Repos\ConsultorioMedERP\ConsultorioMedERP.UsuariosMicroservicio\obj\Debug\netcoreapp2.2\ConsultorioMedERP.UsuariosMicroservicio.pdb

@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsultorioMedERP.Common", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroServicios", "MicroServicios", "{9813DF83-FC69-4338-97E9-81282D14720A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultorioMedERP.UsuariosMicroservicio", "ConsultorioMedERP.UsuariosMicroservicio\ConsultorioMedERP.UsuariosMicroservicio.csproj", "{2F5C888E-35B9-4B8E-9AA8-B84A3045B0E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,9 +19,16 @@ Global
 		{140A1EBA-74ED-491D-9731-7898C58A8690}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{140A1EBA-74ED-491D-9731-7898C58A8690}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{140A1EBA-74ED-491D-9731-7898C58A8690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F5C888E-35B9-4B8E-9AA8-B84A3045B0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F5C888E-35B9-4B8E-9AA8-B84A3045B0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F5C888E-35B9-4B8E-9AA8-B84A3045B0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F5C888E-35B9-4B8E-9AA8-B84A3045B0E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F5C888E-35B9-4B8E-9AA8-B84A3045B0E0} = {9813DF83-FC69-4338-97E9-81282D14720A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F665F47-C410-4503-8CD7-E7B91FB1AD6E}
