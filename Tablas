@@ -1,0 +1,316 @@
+
+-- Table: public."OFICINA"
+
+-- DROP TABLE public."OFICINA";
+
+CREATE TABLE public."OFICINA"
+(
+    "ID" serial NOT NULL,--integer NOT NULL DEFAULT nextval('"OFICINA_OFICINAID_seq"'::regclass),
+    "NOMBRE" text COLLATE pg_catalog."default",
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "OFICINA_pkey" PRIMARY KEY ("ID")
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."OFICINA"
+    OWNER to postgres;
+-- Table: public."ROL"
+
+-- DROP TABLE public."ROL";
+
+CREATE TABLE public."ROL"
+(
+    "ID" serial NOT NULL,-- DEFAULT nextval('"ROL_ROLID_seq"'::regclass),
+    "DESCRIPCION" text COLLATE pg_catalog."default",
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "ROL_pkey" PRIMARY KEY ("ID")
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."ROL"
+    OWNER to postgres;
+	
+-- Table: public."PROCESO"
+
+-- DROP TABLE public."PROCESO";
+
+CREATE TABLE public."PROCESO"
+(
+    "ID" smallserial NOT NULL,--smallint NOT NULL,
+    "CONFIGURACION" json,
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "PROCESO_pkey" PRIMARY KEY ("ID")
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."PROCESO"
+    OWNER to postgres;
+
+-- Table: public."USUARIO"
+
+-- DROP TABLE public."USUARIO";
+
+CREATE TABLE public."USUARIO"
+(
+    "ID" bigserial NOT NULL,
+    "NOMBRE" text COLLATE pg_catalog."default",
+    "APELLIDOPATERNO" text COLLATE pg_catalog."default",
+    "APELLIDOMATERNO" text COLLATE pg_catalog."default",
+    "OFICINAID" integer,
+    "ROLID" integer,
+    "NOMBREUSUARIO" text COLLATE pg_catalog."default",
+	"CONTRASENA" text,
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "USUARIO_pkey" PRIMARY KEY ("ID"),
+    CONSTRAINT "FK_USUARIOOFICINA_OFICINA" FOREIGN KEY ("OFICINAID")
+        REFERENCES public."OFICINA" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "FK_USUARIOROL_ROL" FOREIGN KEY ("ROLID")
+        REFERENCES public."ROL" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."USUARIO"
+    OWNER to postgres;
+
+-- Table: public."USUARIOMEDIA"
+
+-- DROP TABLE public."USUARIOMEDIA";
+
+CREATE TABLE public."USUARIOMEDIA"
+(
+    "ID" integer NOT NULL,
+    "USUARIOIMAGEN" text COLLATE pg_catalog."default",
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "USUARIOMEDIA_pkey" PRIMARY KEY ("ID"),
+    CONSTRAINT "FK_USUARIOMEDIA_USUARIO" FOREIGN KEY ("ID")
+        REFERENCES public."USUARIO" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."USUARIOMEDIA"
+    OWNER to postgres;
+
+-- Table: public."USUARIOAGENDA"
+
+-- DROP TABLE public."USUARIOAGENDA";
+
+CREATE TABLE public."USUARIOAGENDA"
+(
+    "ID" integer NOT NULL,
+    "AGENDAID" integer NOT NULL,
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "USUARIOAGENDA_pkey" PRIMARY KEY ("ID", "AGENDAID"),
+    CONSTRAINT "FK_AGENDA_USUARIO" FOREIGN KEY ("ID")
+        REFERENCES public."USUARIO" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "FK_USUARIOAGENDA_USUARIO" FOREIGN KEY ("AGENDAID")
+        REFERENCES public."USUARIO" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."USUARIOAGENDA"
+    OWNER to postgres;
+	
+	-- Table: public."AREA"
+
+-- DROP TABLE public."AREA";
+
+CREATE TABLE public."AREA"
+(
+    "ID" serial NOT NULL,--integer NOT NULL DEFAULT nextval('"AREA_AREAID_seq"'::regclass),
+    "DESCRIPCION" text COLLATE pg_catalog."default",
+    "USUARIORESPONSABLEID" integer,
+    "AREAPADREID" integer NOT NULL,
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "AREA_pkey" PRIMARY KEY ("ID"),
+    CONSTRAINT "FK_AREAPADRE_AREA" FOREIGN KEY ("AREAPADREID")
+        REFERENCES public."AREA" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "FK_AREAUSUARIO_USUARIO" FOREIGN KEY ("USUARIORESPONSABLEID")
+        REFERENCES public."USUARIO" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."AREA"
+    OWNER to postgres;
+	
+-- Table: public."TIPOEVENTO"
+
+-- DROP TABLE public."TIPOEVENTO";
+
+CREATE TABLE public."TIPOEVENTO"
+(
+    "ID" smallserial NOT NULL,--int NOT NULL DEFAULT nextval('"TIPOEVENTO_TIPOEVENTOID_seq"'::regclass),
+    "DESCRIPCION" text COLLATE pg_catalog."default",
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "TIPOEVENTO_pkey" PRIMARY KEY ("ID")
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."TIPOEVENTO"
+    OWNER to postgres;
+
+-- Table: public."TIPONOTIFICACION"
+
+-- DROP TABLE public."TIPONOTIFICACION";
+
+CREATE TABLE public."TIPONOTIFICACION"
+(
+    "ID" smallserial NOT NULL,--int NOT NULL DEFAULT nextval('"TIPONOTIFICACION_TIPONOTIFICACIONID_seq"'::regclass),
+    "DESCRIPCION" text COLLATE pg_catalog."default",
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "TIPONOTIFICACION_pkey" PRIMARY KEY ("ID")
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."TIPONOTIFICACION"
+    OWNER to postgres;
+
+-- Table: public."SUBTIPONOTIFICACION"
+
+-- DROP TABLE public."SUBTIPONOTIFICACION";
+
+CREATE TABLE public."SUBTIPONOTIFICACION"
+(
+    "ID" smallserial NOT NULL,--int NOT NULL DEFAULT nextval('"SUBTIPONOTIFICACION_SUBTIPONOTIFICACION_seq"'::regclass),
+    "TIPONOTIFICACIONID" smallint NOT NULL,
+    "DESCRIPCION" text COLLATE pg_catalog."default",
+    "PLANTILLANOTIFICACION" text COLLATE pg_catalog."default",
+    "PLANTILLAHTML" text COLLATE pg_catalog."default",
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "SUBTIPONOTIFICACION_pkey" PRIMARY KEY ("ID", "TIPONOTIFICACIONID"),
+    CONSTRAINT "FK_SUBTIPONOTIFICACION_TIPONOTIFICACION" FOREIGN KEY ("TIPONOTIFICACIONID")
+        REFERENCES public."TIPONOTIFICACION" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."SUBTIPONOTIFICACION"
+    OWNER to postgres;
+
+-- Table: public."EVENTO"
+
+-- DROP TABLE public."EVENTO";
+
+CREATE TABLE public."EVENTO"
+(
+    "ID" bigserial NOT NULL,--int NOT NULL,
+    "TITULO" text COLLATE pg_catalog."default",
+    "DESCRIPCION" text COLLATE pg_catalog."default",
+    "FECHAINICIO" date,
+    "FECHAFIN" date,
+    "DIACOMPLETO" boolean,
+    "USUARIORESPONSABLEID" integer,
+    "TIPOEVENTOID" integer,
+    "RECORDATORIO" boolean DEFAULT false,
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "EVENTO_pkey" PRIMARY KEY ("ID"),
+    CONSTRAINT "FK_EVENTOTIPOEVENTO_TIPOEVENTO" FOREIGN KEY ("TIPOEVENTOID")
+        REFERENCES public."TIPOEVENTO" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "FK_EVENTOUSUARIORESP_USUARIO" FOREIGN KEY ("USUARIORESPONSABLEID")
+        REFERENCES public."USUARIO" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."EVENTO"
+    OWNER to postgres;
+
+
+-- Table: public."NOTIFICACION"
+
+-- DROP TABLE public."NOTIFICACION";
+
+CREATE TABLE public."NOTIFICACION"
+(
+    "ID" bigserial NOT NULL,--int NOT NULL DEFAULT nextval('"NOTIFICACION_NOTIFICACIONID_seq"'::regclass),
+    "DATOSNOTIFICACION" json,
+    "USUARIONOTIFICACIONID" bigint,
+    "EVENTOID" bigint,
+    "SUBTIPONOTIFICACIONID" smallint,
+    "TIPONOTIFICACIONID" smallint,
+    "LEIDO" boolean,
+    "VISTO" boolean,
+	"FECHACREACION" date not null default CURRENT_DATE,
+	"FECHAMODIFICACION" date not null default CURRENT_DATE,
+    CONSTRAINT "NOTIFICACION_pkey" PRIMARY KEY ("ID"),
+    CONSTRAINT "FK_NOTIFICACION_EVENTO" FOREIGN KEY ("EVENTOID")
+        REFERENCES public."EVENTO" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "FK_NOTIFICACION_SUBTIPONOTIFICACION" FOREIGN KEY ("SUBTIPONOTIFICACIONID", "TIPONOTIFICACIONID")
+        REFERENCES public."SUBTIPONOTIFICACION" ("ID", "TIPONOTIFICACIONID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "FK_NOTIFICACION_USUARIO" FOREIGN KEY ("USUARIONOTIFICACIONID")
+        REFERENCES public."USUARIO" ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."NOTIFICACION"
+    OWNER to postgres;
