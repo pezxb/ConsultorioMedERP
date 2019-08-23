@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using ConsultorioMedERP.Common.EstructuraOrganizacional;
+using ConsultorioMedERP.Common.Evento;
 using Microsoft.EntityFrameworkCore;
 
 namespace ConsultorioMedERP.UsuariosMicroservicio.Context
@@ -12,6 +13,7 @@ namespace ConsultorioMedERP.UsuariosMicroservicio.Context
 
         }
         public DbSet<Usuario> Usuario{ get; set; }
+        public DbSet<Evento> Evento { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

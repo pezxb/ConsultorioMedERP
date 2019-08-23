@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
+using AutoMapper;
 using ConsultorioMedERP.UsuariosMicroservicio.Context;
+using ConsultorioMedERP.UsuariosMicroservicio.Mappers;
+using ConsultorioMedERP.UsuariosMicroservicio.Repository.Contratos;
+using ConsultorioMedERP.UsuariosMicroservicio.Repository.Servicio;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
+using System;
 
 namespace ConsultorioMedERP.UsuariosMicroservicio
 {
@@ -28,18 +27,35 @@ namespace ConsultorioMedERP.UsuariosMicroservicio
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("allowall",
+                builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "Agenda-microservicio", Version = "v1" });
             });
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new EventosProximosProfile());
+            });
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
             services.AddDbContext<UsuarioContext>(options =>
             options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+
+            app.UseCors("allowall");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
