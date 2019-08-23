@@ -8,7 +8,9 @@ namespace ConsultorioMedERP.UsuariosMicroservicio.Model
 {
     public class EventosProximos
     {
-        public string dia { get; set; }
+        public DateTime dia;
+
+        public string id { get; set; }
         public List<Evento> eventos { get; set; }
     }
 }

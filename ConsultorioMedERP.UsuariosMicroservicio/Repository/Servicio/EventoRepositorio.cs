@@ -38,7 +38,8 @@ namespace ConsultorioMedERP.UsuariosMicroservicio.Repository.Servicio
             try{
                 var resultados = await UsuarioContext.Evento.GroupBy(e => new { y = e.FECHAINICIO.Year, m = e.FECHAINICIO.Month, d = e.FECHAINICIO.Day }).Select(x => new EventosProximos
                 {
-                    dia = $"{x.Key.y}{x.Key.m}{x.Key.d}",
+                    id = $"{x.Key.y}{x.Key.m}{x.Key.d}",
+                    dia=new DateTime(x.Key.y,x.Key.m,x.Key.d),
                     eventos= x.ToList()
                 }).ToListAsync();
                 return resultados;
