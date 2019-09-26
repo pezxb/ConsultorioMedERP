@@ -11,6 +11,7 @@ namespace ConsultorioMedERP.UsuariosMicroservicio.Repository.Servicio
     {
         private readonly UsuarioContext _usuarioContext;
         private IEventoRepositorio _evento;
+        private IUsuarioRepositorio _usuario;
 
         public RepositoryWrapper(UsuarioContext usuarioContext)
         {
@@ -26,6 +27,18 @@ namespace ConsultorioMedERP.UsuariosMicroservicio.Repository.Servicio
                     _evento = new EventoRepositorio(_usuarioContext);
                 }
                 return _evento;
+            }
+        }
+
+        public IUsuarioRepositorio Usuario
+        {
+            get
+            {
+                if (_usuario == null)
+                {
+                    _usuario = new UsuarioRepositorio(_usuarioContext);
+                }
+                return _usuario;
             }
         }
 

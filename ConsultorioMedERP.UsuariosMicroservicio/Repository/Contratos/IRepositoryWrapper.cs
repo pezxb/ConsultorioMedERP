@@ -8,6 +8,7 @@ namespace ConsultorioMedERP.UsuariosMicroservicio.Repository.Contratos
     public interface IRepositoryWrapper
     {
         IEventoRepositorio Evento { get; }
+        IUsuarioRepositorio Usuario { get; }
         void Save();
     }
 }

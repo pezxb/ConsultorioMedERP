@@ -17,4 +17,9 @@ namespace ConsultorioMedERP.Common.Evento
         public int USUARIORESPONSABLEID { get; set; }
         public int TIPOEVENTOID { get; set; }
     }
+
+    public class EventoDto :Evento
+    {
+        public string FECHAINICIO { get; set; }
+    }
 }

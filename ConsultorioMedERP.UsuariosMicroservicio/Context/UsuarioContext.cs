@@ -14,10 +14,14 @@ namespace ConsultorioMedERP.UsuariosMicroservicio.Context
         }
         public DbSet<Usuario> Usuario{ get; set; }
         public DbSet<Evento> Evento { get; set; }
+        public DbSet<TipoEvento> TipoEvento { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasDefaultSchema("public");
+            modelBuilder.Entity<Evento>()
+        .Property(p => p.ID)
+        .ValueGeneratedOnAdd();
         }
     }
 }
